@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    background-color: #f6dccd;
+    width: 100vh 100vh;
+    height: 100vh auto;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: transparent;
+}
+
+.nav{
+    min-width: 1rem;
+}
+
+.nav ul{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.sign-in{
+    width: auto;
+}
+
+.sign-in button{
+    width: 5rem;
+    height: 2rem;
+    border-radius: 50px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    outline: none;
+}
+
+.expense-box{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    background-color: #ffffff;
+    padding: 2rem;
+    margin: 4rem;
+    border-radius: 20px;
+    min-width: auto;
+}
+
+.Total-expenses{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+}
+
+.added-expenses{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2rem;
+    margin: 2rem;
+    background-color: #efe7e2;
+}
+
+.added-expenses h3{
+    background-color: #efe7e2;
+    width: 6rem;
+    text-align: center;
+}
+
+.add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem;
+}
+
+.add input{
+    width: 6rem;
+    height: 1.3rem;
+    padding: 1rem;
+    border-radius: 50px;   
+    border: none;
+}
+
+.add button{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    outline: none;
+}
+
+.added{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2rem;
+    margin: 2rem;
+    text-align: center;
+}
+
+.added h3{
+    text-align: center;
+}
+

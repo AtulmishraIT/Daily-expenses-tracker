@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Expenses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+    <div class="main">
+        <div class="navbar">
+            <div class="logo">
+                <h2>Daily Expenses</h2>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>Home</li>
+                    <li>Expenses</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="sign-in">
+                <button>SignIn</button>
+                <button>SignUp</button>
+            </div>
+        </div>
+        <div class="expense-box">
+            <div class="Total-expenses">
+                <label>Total </label> <h2 class="totamt">0.00</h2> <label>/-</label>
+            </div>
+            <div class="added-expenses">
+                <h3>SrNo.</h3>
+                <h3>Date</h3>
+                <h3>item</h3>
+                <h3>Amount</h3>
+            </div>
+        </div>
+        <div class="add">
+            <input type="text" class="sr" placeholder="enter serial no." required>
+            <input type="date" class="date" placeholder="Enter date">
+            <input type="text" class="item" placeholder="Enter description" required>
+            <input type="text" class="amt" placeholder="Enter Amount" required><br><br>
+            <button class="add-btn">Add</button>
+        </div>
+    </div></form>
+    <script src="script.js"></script>
+</body>
+</html>
