@@ -1,49 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Expenses</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Expenses Tracker</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <form>
-    <div class="main">
-        <div class="navbar">
-            <div class="logo">
-                <h2>Daily Expenses</h2>
-            </div>
-            <div class="nav">
-                <ul>
-                    <li>Home</li>
-                    <li>Expenses</li>
-                    <li>Contact Us</li>
-                </ul>
-            </div>
-            <div class="sign-in">
-                <button>SignIn</button>
-                <button>SignUp</button>
-            </div>
-        </div>
-        <div class="expense-box">
-            <div class="Total-expenses">
-                <label>Total </label> <h2 class="totamt">0.00</h2> <label>/-</label>
-            </div>
-            <div class="added-expenses">
-                <h3>SrNo.</h3>
-                <h3>Date</h3>
-                <h3>item</h3>
-                <h3>Amount</h3>
-            </div>
-        </div>
-        <div class="add">
-            <input type="text" class="sr" placeholder="enter serial no." required>
-            <input type="date" class="date" placeholder="Enter date">
-            <input type="text" class="item" placeholder="Enter description" required>
-            <input type="text" class="amt" placeholder="Enter Amount" required><br><br>
-            <button class="add-btn">Add</button>
-        </div>
-    </div></form>
-    <script src="script.js"></script>
+<div class="container">
+    <h1>Daily Expenses Tracker</h1>
+    <div class="expenses-form">
+        <label for="expense-name">Expense Name:</label>
+        <input type="text" id="expense-name" placeholder="Enter expense name">
+
+        <label for="expense-amount">Amount:</label>
+        <input type="number" id="expense-amount" placeholder="Enter amount">
+
+        <button onclick="addExpense()">Add Expense</button>
+    </div>
+
+    <div class="expenses-list">
+        <p>Total Expenses: <span id="total-expenses">0</span> /-</p>
+        <ul id="expenses-list"></ul>
+        
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
